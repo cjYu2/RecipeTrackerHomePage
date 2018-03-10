@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddRecipe"></activity>
+        <activity android:name=".BreakfastPage"></activity>
+        <activity android:name=".LunchPage"></activity>
+        <activity android:name=".DinnerPage"></activity>
     </application>
 
 </manifest>
