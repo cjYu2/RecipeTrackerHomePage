@@ -12,8 +12,6 @@ import android.widget.Button;
  */
 
 public class AddRecipe extends AppCompatActivity{
-    Button back;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +19,10 @@ public class AddRecipe extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_recipe);
 
-        final Button back = (Button)findViewById(R.id.button2) ;
+        final Button back = findViewById(R.id.backAdd);
 
         back.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(AddRecipe.this, MainActivity.class));
             }

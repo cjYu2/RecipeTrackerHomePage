@@ -52,6 +52,7 @@
         android:layout_below="@+id/lunch"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Dinner" />
+        android:text="Dinner"
+        android:textAlignment="center" />
 
 </RelativeLayout>

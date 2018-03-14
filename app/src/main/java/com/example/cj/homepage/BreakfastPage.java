@@ -13,21 +13,20 @@ import android.widget.Button;
 
 public class BreakfastPage extends AppCompatActivity{
 
-    Button back;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_recipe);
+        setContentView(R.layout.breakfast_page);
 
-        final Button back = (Button)findViewById(R.id.button);
+        final Button back = findViewById(R.id.backBreakfast);
 
         back.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(BreakfastPage.this, MainActivity.class));
             }
         });
 
-    }
+            }
 }

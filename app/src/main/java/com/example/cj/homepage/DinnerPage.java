@@ -13,19 +13,19 @@ import android.widget.Button;
 
 public class DinnerPage extends AppCompatActivity{
 
-    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_recipe);
+        setContentView(R.layout.dinner_page);
 
-        final Button back = (Button)findViewById(R.id.button3) ;
+        final Button back = findViewById(R.id.backDinner);
 
         back.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(DinnerPage.this, MainActivity.class));
             }
         });
 
-    }
+            }
 }

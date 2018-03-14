@@ -14,34 +14,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button add = (Button)findViewById(R.id.addRecipe);
-        final Button breakfasts=(Button)findViewById(R.id.breakfast);
-        final Button lunchs = (Button)findViewById(R.id.lunch);
-        final Button dinners=(Button)findViewById(R.id.dinner);
-
-
+        final Button add = findViewById(R.id.addRecipe);
+        final Button breakfast=findViewById(R.id.breakfast);
+        final Button lunch = findViewById(R.id.lunch);
+        final Button dinner=(Button)findViewById(R.id.dinner);
 
         add.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AddRecipe.class));
             }
         });
-
-        breakfasts.setOnClickListener(new View.OnClickListener() {
+        breakfast.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BreakfastPage.class));
             }
         });
-        lunchs.setOnClickListener(new View.OnClickListener() {
+        lunch.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, LunchPage.class));
             }
         });
-        dinners.setOnClickListener(new View.OnClickListener() {
+        dinner.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DinnerPage.class));
             }
         });
-
     }
 }

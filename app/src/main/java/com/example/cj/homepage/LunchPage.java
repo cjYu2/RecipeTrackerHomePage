@@ -12,21 +12,20 @@ import android.widget.Button;
  */
 
 public class LunchPage extends AppCompatActivity {
-
-    Button back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_recipe);
+        setContentView(R.layout.lunch_page);
 
-        final Button back = (Button)findViewById(R.id.button4);
+        final Button back = findViewById(R.id.backLunch);
 
         back.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
                 startActivity(new Intent(LunchPage.this, MainActivity.class));
             }
         });
-
     }
+
 }
